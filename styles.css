@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img,
+picture,
+SVG,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* header code */
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    border-bottom: 4px solid rgb(25, 25, 25);
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0px 40px;
+}
+
+nav {
+    /* Your styles here */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+nav a {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: red;
+}
+
+nav a:nth-of-type(1):hover {
+    color: green;
+
+}
+
+nav a:nth-of-type(2):hover {
+    color: blue;
+
+}
+
+nav a:nth-of-type(3):hover {
+    color: orange;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 800px;
+    min-width: 300px;
+    aspect-ratio: 4/2;
+    overflow-y: auto;
+    margin: 40px 80px;
+}
+
+section h2 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+section p {
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+footer {
+    width: 100vw;
+    border-top: 4px solid rgb(25, 25, 25);
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+    }
+
+    nav {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    nav {
+        padding: none;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
