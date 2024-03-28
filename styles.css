@@ -14,8 +14,11 @@ html {
     color-scheme: dark light;
 }
 
+
+
 body {
     min-height: 100vh;
+
 }
 
 img,
@@ -26,8 +29,17 @@ video {
     max-width: 100%;
 }
 
+/* end standard reset */
+:root {
+    --black-color: rgb(25, 25, 25) color-scheme: light dark;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+    --text: light-dark(black, white);
+    --background: light-dark(whitesmoke, var(--black-color));
+    color: var(--text);
+    background-color: var(--background);
 }
 
 /* header code */
@@ -38,12 +50,12 @@ header {
     justify-content: space-between;
     padding: 12px;
     align-items: center;
-    border-bottom: 4px solid rgb(25, 25, 25);
+    border-bottom: 4px solid var(--text);
 }
 
 header a {
     text-decoration: none;
-    color: rgb(25, 25, 25);
+    color: var(--text);
 }
 
 h1 {
@@ -96,7 +108,7 @@ main {
 }
 
 section {
-    border: 2px solid black;
+    border: 2px solid var(--text);
     border-radius: 8px;
     max-width: 800px;
     min-width: 300px;
@@ -146,7 +158,7 @@ section div p {
 
 footer {
     width: 100vw;
-    border-top: 4px solid rgb(25, 25, 25);
+    border-top: 4px solid var(--text);
     padding: 20px;
     text-align: center;
 }
